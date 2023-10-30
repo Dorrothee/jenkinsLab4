@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
-<project name="Hello World Project" default="info">
-    <target name="info">
-        <echo>PriorityQueue Project run</echo>
+<project name="lab4" basedir=".">
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+
+    <target name="init">
+        <tstamp/>
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="compile" depends="init"
+            description="compile the source">
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac srcdir="${src}" destdir="${build}"/>
     </target>
 </project>
