@@ -9,5 +9,13 @@
         <module name="lab4" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-surefire-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="maven-surefire-common" options="-Xdoclint:all" />
+    </option>
   </component>
 </project>
